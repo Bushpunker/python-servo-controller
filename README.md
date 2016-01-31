@@ -2,10 +2,11 @@
 Python module to allow easy control of servo motors connected to the parallel port.
 
 ```
-Usage:
-from servo import Servo
-import parallel
-from multiprocessing import Process, Array
+USAGE:
+
+  from multiprocessing import Process, Array
+  from servo import Servo
+  import parallel
 
   servos = Servo(parallel.Parallel(0))
   pos = Array('d', [180, 180, 180])
@@ -13,7 +14,7 @@ from multiprocessing import Process, Array
   cont.start()
 
   pos[0] = 90
-	pos[1] = 52
+  pos[1] = 52
 
 This starts the servo controller in it's own seperate process, and by
 changing the values (servo angles) in pos[] in your main code, the physical
