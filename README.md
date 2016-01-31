@@ -1,10 +1,7 @@
 # python-servo-controller
 Python module to allow easy control of servo motors connected to the parallel port.
 
-USAGE:
-from servo import Servo
-
-
+```
 Usage:
 from servo import Servo
 import parallel
@@ -27,3 +24,4 @@ port (D0, D1, etc).
 
 Using the above sample code: pos[0] controls the servo connected to D0, and
 pos[1] controls the servo connected to D1, etc.
+```
